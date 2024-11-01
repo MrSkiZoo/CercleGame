@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+}
+
+h1 {
+    margin: 20px;
+    color: #e74c3c;
+}
+
+#main-menu {
+    text-align: center;
+    margin: 50px;
+}
+
+button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff5e57;
+}
+
+.modal {
+    display: none; /* مخفي في البداية */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #e74c3c;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#settings {
+    margin-bottom: 15px;
+    display: none; /* إخفاء الإعدادات في البداية */
+}
+
+#game-container {
+    width: 300px;
+    height: 500px;
+    background: radial-gradient(circle, #2c2c2c, #1a1a1a);
+    border: 2px solid #e74c3c;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #333;
+    border: 4px solid #e74c3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 18px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.circle.winner {
+    background-color: #ffffff;
+    color: #333;
+    transform: scale(2); /* تكبير حجم الدائرة الفائزة */
+}
+
+.circle.loser {
+    opacity: 0.5; /* جعل الدوائر الخاسرة أفتح */
+}
+
+#result {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #e74c3c;
+}
+
+#settings label {
+    color: #e74c3c;
+}
+
+#timer {
+    width: 50px;
+    text-align: center;
+}
+
+#countdown {
+    margin-top: 15px;
+    font-size: 24px;
+    color: #e74c3c;
+}

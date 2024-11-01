@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة الدوائر - Mr.Ski_Zoo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-menu">
+        <h1>لعبة الدوائر - Mr.Ski_Zoo</h1>
+        <button id="play-button">ابدأ اللعبة</button>
+        <button id="about-button">حول اللعبة</button>
+    </div>
+
+    <div id="about-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal">&times;</span>
+            <h2>حول اللعبة</h2>
+            <p>هاد اللعبة كادو لصاحبي Ziyad</p>
+            <p>نتمنا تعجبك اصاط</p>
+        </div>
+    </div>
+
+    <div id="settings" style="display: none;">
+        <label for="timer">مدة انتظار اختيار الفائز (ثواني):</label>
+        <input type="number" id="timer" value="2" min="1">
+        <center><button id="start-game">ابدأ اللعبة</button></center>
+    </div>
+
+    <div id="game-container" style="display: none;"></div>
+    
+    <p id="result"></p>
+    <p id="countdown" style="font-size: 24px; color: #e74c3c;"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
